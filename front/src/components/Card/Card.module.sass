@@ -1,0 +1,191 @@
+.cardSection
+    margin: 0 auto
+    font-family: $font-main
+    background-color: $color-gray-6
+    box-sizing: border-box
+
+.cardwrapper
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 24px
+
+.headerBar
+    padding-top: 60px 
+    padding-bottom: 24px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: $size-4
+    width: 100%
+
+.cardPageTitle
+    font-size: $size-6
+    color: $color-gray-1
+    font-weight: 700
+    margin: 0
+
+.ViewAll
+    display: flex
+    align-items: center
+    gap: 8px
+    cursor: pointer
+    transition: $transition
+
+.ViewAll:hover
+    opacity: 0.8
+
+.ViewAllbtn
+    background: transparent
+    border: none
+    font-size: $size-2
+    color: $color-gray-1
+    font-weight: 600
+    cursor: pointer
+    font-family: $font-main
+
+.VievAllImg
+    width: 16px
+    height: 16px
+
+.btnlist
+    display: flex
+    gap: 32px
+    margin-bottom: 48px
+    border-bottom: 1px solid $color-gray-5
+    padding-bottom: 12px
+    width: 100%
+
+.btn
+    background: transparent
+    border: none
+    padding: 0 4px
+    font-size: $size-2
+    color: $color-gray-2
+    font-weight: 500
+    cursor: pointer
+    font-family: $font-main
+    position: relative
+    transition: color $transition
+
+.btn:hover
+    color: $color-gray-1
+
+.btn::after
+    content: ''
+    position: absolute
+    bottom: -13px
+    left: 0
+    width: 100%
+    height: 3px
+    background-color: $color-main
+    transform: scaleX(0)
+    transition: transform $transition, opacity $transition
+    opacity: 0
+
+.active
+    color: $color-gray-1
+    font-weight: 600
+
+.active::after
+    transform: scaleX(1)
+    opacity: 1
+
+.cardList
+    padding-bottom: 60px 
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 24px
+
+
+.card
+    background-color: $color-white
+    border: 1px solid $color-gray-4
+    border-radius: $radius-2
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    transition: $transition
+
+.card:hover
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05)
+    border-color: $color-gray-3
+
+.cardImg
+    width: 100%
+    height: 200px
+    object-fit: cover
+
+.cardTitle
+    font-size: $size-4
+    color: $color-gray-1
+    font-weight: 600
+    padding: $size-3 $size-3 4px $size-3
+    margin: 0
+
+.cardDescText
+    font-size: $size-2
+    color: $color-gray-2
+    padding: 0 $size-3
+    margin: 0 0 $size-3 0
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.cardDesc
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: $size-3
+    border-top: 1px solid $color-gray-5
+    border-bottom: 1px solid $color-gray-5
+    margin-bottom: $size-3
+
+.cardDescItem
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 4px
+    font-size: $size-1
+    color: $color-gray-1
+    font-weight: 500
+
+.descIcon
+    width: 16px
+    height: 16px
+    opacity: 0.7
+
+.cardContent
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 $size-3 $size-3 $size-3
+    margin-top: auto
+
+.cardPrice
+    font-size: $size-4
+    color: $color-gray-1
+    font-weight: 700
+
+.cardInfo
+    display: flex
+    align-items: center
+    gap: 6px
+    cursor: pointer
+    transition: $transition
+
+.cardInfo:hover
+    opacity: 0.8
+
+.cardInfoText
+    background: transparent
+    border: none
+    color: $color-main
+    font-size: $size-2
+    font-family: $font-main
+    font-weight: 600
+    cursor: pointer
+    padding: 0
+
+.cardInfoImg
+    width: 12px
+    height: 12px
