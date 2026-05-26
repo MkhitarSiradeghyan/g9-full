@@ -1,8 +1,9 @@
 import React from 'react'
+import BrowseByType from '../../components/BrowseByType/BrowseByType';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>{<BrowseByType />}</div>
   )
 }
 
