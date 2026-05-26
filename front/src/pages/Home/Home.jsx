@@ -1,14 +1,9 @@
-import React from "react";
-import Card from "../../components/Card/Card";
-import Reviews from "../../components/Reviews/Reviews";
+import React from 'react'
 
 const Home = () => {
-    return (
-        <div>
-            <Card />
-            <Reviews />
-        </div>
-    );
-};
+  return (
+    <div>Home</div>
+  )
+}
 
-export default Home;
+export default Home
