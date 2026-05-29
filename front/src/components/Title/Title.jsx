@@ -1,8 +1,10 @@
-import React from "react";
-import s from "./Title.module.sass";
+import React from 'react'
+import s from "./Title.module.sass"
 
 const Title = () => {
-    return <div className={s.title}>Title</div>;
-};
+  return (
+    <div>Title</div>
+  )
+}
 
-export default Title;
+export default Title

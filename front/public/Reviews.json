@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "rating": 5,
+        "title": "Sales process was simple and easy",
+        "text": "Sales process was simple and easy. Maximillion was friendly and I didn't feel pressured at any point.",
+        "author": "Ali Tufan",
+        "verified": true
+    },
+    {
+        "id": 2,
+        "rating": 5,
+        "title": "Great service and clean cars",
+        "text": "Booking was fast, pickup was on time, and the car was exactly as described on the website.",
+        "author": "Pablo escobar",
+        "verified": true
+    },
+    {
+        "id": 3,
+        "rating": 4,
+        "title": "Smooth rental experience",
+        "text": "Everything went well from start to finish. Would recommend to friends looking for a reliable rental.",
+        "author": "David Miller",
+        "verified": true
+    }
+]

@@ -1,8 +1,10 @@
-import React from "react";
-import Card from "../../components/Card/Card";
+import React from 'react'
+import BrowseByType from '../../components/BrowseByType/BrowseByType';
 
 const Home = () => {
-    return <div>{<Card />}</div>;
-};
+  return (
+    <div>{<BrowseByType />}</div>
+  )
+}
 
-export default Home;
+export default Home

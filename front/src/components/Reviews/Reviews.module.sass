@@ -1,0 +1,33 @@
+.section
+    background-color: $color-gray-6
+    font-family: $font-main
+
+.wrapper
+    max-width: 1200px
+    margin: 0 auto
+    padding: 60px 24px
+
+.sectionTitle
+    margin: 0 0 32px
+    font-size: $size-6
+    font-weight: 700
+    color: $color-gray-1
+
+.list
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 24px
+
+.empty
+    grid-column: 1 / -1
+    text-align: center
+    color: $color-gray-2
+    font-size: $size-2
+
+@media (max-width: 992px)
+    .list
+        grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 640px)
+    .list
+        grid-template-columns: 1fr
