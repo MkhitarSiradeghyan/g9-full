@@ -1,10 +1,11 @@
 import React from 'react'
-import Explore from './components/Explore/Explore'
+import Why from './components/Why/Why'
+
 
 const App = () => {
   return (
     <div>
-      <Explore/>
+      <Why/>
     </div>
   )
 }
