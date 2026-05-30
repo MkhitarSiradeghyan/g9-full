@@ -1,8 +1,11 @@
 import React from 'react'
+import Explore from './components/Explore/Explore'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Explore/>
+    </div>
   )
 }
 
