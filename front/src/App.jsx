@@ -1,9 +1,12 @@
 import React from 'react'
+import Ourteam from './components/Ourteam/Ourteam';
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
-  )
+    <>
+      <Ourteam />
+    </>
+  );
 }
 
-export default App
+export default App;

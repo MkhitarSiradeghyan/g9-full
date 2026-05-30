@@ -1,0 +1,66 @@
+.team_section
+  padding: 80px 60px
+  background: $color-white
+
+.team_header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 40px
+
+  h1
+    font-size: $size-7
+    font-weight: 700
+    color: $color-black
+    line-height: 40px
+    font-family: $font-main
+
+  a
+    text-decoration: none
+    color: $color-black
+    font-size: $size-2
+    line-height: 15px 
+    
+
+.team_grid
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 24px
+
+  div
+    display: flex
+    flex-direction: column
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: $radius-2
+      background: $color-gray-5
+      margin-bottom: 16px
+
+    h2
+      font-size: $size-5
+      line-height: 24px
+      font-weight: 600
+      margin: 0 0 8px
+      margin-bottom: 0
+      font-family: $font-main
+
+    h3
+      font-size: $size-2
+      color: $color-gray-1
+      line-height: 26px
+      margin-top: 0
+      font-family: $font-main
+
+  .team_header
+    flex-direction: column
+    align-items: flex-start
+    gap: 10px
+
+    h1
+      font-size: $size-6
+
+  .team_grid
+    grid-template-columns: 1fr
