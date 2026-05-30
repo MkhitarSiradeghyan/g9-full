@@ -15,7 +15,7 @@
     display: flex
     justify-content: space-between
     align-items: center
-    margin-bottom: $size-4
+    margin-bottom: 18px
     width: 100%
 
 .cardPageTitle
@@ -96,7 +96,6 @@
     grid-template-columns: repeat(4, 1fr)
     gap: 24px
 
-
 .card
     background-color: $color-white
     border: 1px solid $color-gray-4
@@ -110,10 +109,60 @@
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05)
     border-color: $color-gray-3
 
+// ==========================================
+// ՏԱԶԱ ԱՎԵԼԱՑՎԱԾ ՈՃԵՐԸ (Նկարի վրայի էլեմենտներ)
+// ==========================================
+
+.imageContainer
+    position: relative
+    width: 100%
+    height: 200px // Համապատասխանեցված է նկարի բարձրությանը
+    overflow: hidden
+
 .cardImg
     width: 100%
-    height: 200px
+    height: 100%
     object-fit: cover
+
+// Կանաչ նշանը (Great Price)
+.badge
+    position: absolute
+    top: 16px
+    left: 16px
+    background-color: $color-accent // Քո սահմանած կանաչ գույնը
+    color: $color-white
+    padding: 6px 14px
+    border-radius: $radius-1
+    font-size: $size-1
+    font-weight: 600
+    letter-spacing: 0.2px
+
+// Կարզինկայի / Bookmark կլոր սպիտակ կոճակը
+.bookmarkBtn
+    position: absolute
+    top: 16px
+    right: 16px
+    width: $size-7 // 40px
+    height: $size-7 // 40px
+    background-color: $color-white
+    border-radius: $radius-full // Կլորացում infinity-ով
+    border: none
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: transform $transition
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08)
+    outline: none
+    padding: 0
+
+    &:hover
+        transform: scale(1.06)
+
+    &.activeBookmark
+        background-color: $color-white // Սպիտակ է մնում, ներսի SVG-ն է ներկվում
+
+// ==========================================
 
 .cardTitle
     font-size: $size-4
@@ -158,7 +207,7 @@
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 0 $size-3 $size-3 $size-3
+    padding: 0 16px 16px 16px
     margin-top: auto
 
 .cardPrice
